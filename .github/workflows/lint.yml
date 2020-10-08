@@ -14,14 +14,14 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v2
       - name: Lint markdown
-        uses: proum-public/actions/lint-markdown@main
+        uses: proum-public/actions/lint/markdown@main
       - name: Lint YAML
-        uses: proum-public/actions/lint-yaml@main
+        uses: proum-public/actions/lint/yaml@main
       - name: Lint Dockerfile in Markdown lint action
-        uses: proum-public/actions/lint-dockerfile@main
+        uses: proum-public/actions/lint/dockerfile@main
         with:
           dockerfile: lint-markdown/Dockerfile
       - name: Lint Dockerfile in YAML lint action
-        uses: proum-public/actions/lint-yaml@main
+        uses: proum-public/actions/lint/yaml@main
         with:
           dockerfile: lint-yaml/Dockerfile

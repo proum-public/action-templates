@@ -14,4 +14,4 @@ List of findings
 
 ## Example usage
 
-uses: proum-public/actions/lint-dockerfile@v1
+uses: proum-public/actions/lint/dockerfile@v1
