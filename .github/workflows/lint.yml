@@ -14,4 +14,4 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v2
       - name: Lint markdown
-        uses: actions/lint-markdown@v0.1
+        uses: proum-public/actions/lint-markdown@v0.1
