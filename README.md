@@ -1,8 +1,7 @@
-<p align="center">
-    <a href="https://github.com/proum-public/actions/actions"><img alt="GitHub Workflow Status (branch)" src="https://img.shields.io/github/workflow/status/proum-public/actions/Lint/main"></a>
-</p>
+![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/proum-public/actions/Lint/main)
 
 # Proum-Public GitHub Actions
+
 > This repository provides GitHub Actions that help to increase the quality of your repositories
 
 # Usage
