@@ -5,6 +5,7 @@ inputs:
   dockerfile:
     description: 'Path to Dockerfile'
     default: 'Dockerfile'
+    required: false
 runs:
   using: 'docker'
   image: 'docker://hadolint/hadolint:v1.18.0-alpine'
