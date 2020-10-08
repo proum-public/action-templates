@@ -1,0 +1,17 @@
+---
+name: Lint
+
+on:
+  push: {
+    branches: main
+  }
+
+jobs:
+  lint:
+    name: Lint repository content
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+      - name: Lint markdown
+        uses: actions/lint/markdown

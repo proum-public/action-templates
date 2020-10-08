@@ -1,0 +1,10 @@
+---
+name: Lint markdown
+description: Lints every markdown file
+runs:
+  using: ruby:2.7-slim
+  steps:
+    - run: gem install mdl
+      shell: bash
+    - run: mdl ./
+      shell: bash
