@@ -7,3 +7,6 @@ runs:
   args:
     - mdl
     - ./
+outputs:
+  hints:
+    description: 'List of markdown lint findings'
