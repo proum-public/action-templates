@@ -7,7 +7,7 @@ inputs:
     default: 'Dockerfile'
 runs:
   using: 'docker'
-  image: 'hadolint/hadolint:v1.18.0-alpine'
+  image: 'docker://hadolint/hadolint:v1.18.0-alpine'
   args:
     - hadolint
     - ${{ inputs.dockerfile }}
