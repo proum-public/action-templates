@@ -1,0 +1,15 @@
+---
+name: Upload Git README to Dockerhub
+description: Processes includes and sends the result to Dockerhub
+inputs:
+  DOCKERHUB_USERNAME:
+    required: true
+    description: "Username for Dockerhub"
+  DOCKERHUB_PASSWORD:
+    required: true
+    description: "Password for Dockerhub"
+runs:
+  using: 'docker'
+  image: 'docker://proum/dockerhub-description:latest'
+  args:
+    - "--pipeline"
