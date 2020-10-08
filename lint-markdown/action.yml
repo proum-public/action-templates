@@ -2,10 +2,7 @@
 name: Lint markdown
 description: Lints every markdown file
 runs:
-  using: docker
-  image: ruby:2.7-slim
-  steps:
-    - run: gem install mdl
-      shell: bash
-    - run: mdl ./
-      shell: bash
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - mdl ./
