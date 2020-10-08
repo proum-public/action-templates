@@ -6,6 +6,8 @@ runs:
   image: 'Dockerfile'
   args:
     - yamllint
+    - disable-line
+    - rule:truthy
     - ./
 outputs:
   hints:
