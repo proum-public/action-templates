@@ -8,12 +8,10 @@ This action lints all Markdown files and abort by critical findings
 
 ## Outputs
 
-### `time`
+### `hints`
 
-The time we greeted you.
+List of findings
 
 ## Example usage
 
-uses: actions/hello-world-docker-action@v1
-with:
-  who-to-greet: 'Mona the Octocat'
+uses: proum-public/actions/lint-markdown@v1

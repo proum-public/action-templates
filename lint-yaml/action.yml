@@ -1,0 +1,12 @@
+---
+name: Lint YAML
+description: Lints every YAML file
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - yamllint
+    - ./
+outputs:
+  hints:
+    description: 'List of YAML lint findings'

@@ -1,0 +1,16 @@
+---
+name: Lint Dockerfile
+description: Lints every Dockerfile
+inputs:
+  dockerfile:
+    description: 'Path to Dockerfile'
+    default: 'Dockerfile'
+runs:
+  using: 'docker'
+  image: 'hadolint/hadolint:v1.18.0-alpine'
+  args:
+    - hadolint
+    - ${{ inputs.dockerfile }}
+outputs:
+  hints:
+    description: 'List of Dockerfile lint findings'
