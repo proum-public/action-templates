@@ -4,10 +4,6 @@ This action will take your git README and send it to Dockerhub
 
 ## Inputs
 
-* None
-
-## Outputs
-
 ### `DOCKERHUB_USERNAME`
 
 **Required** The username which will be used to authenticate against Dockerhub.
@@ -15,6 +11,10 @@ This action will take your git README and send it to Dockerhub
 ### `DOCKERHUB_PASSWORD`
 
 **Required** The password which will be used to authenticate against Dockerhub.
+
+## Outputs
+
+* None
 
 ## Example usage
 
