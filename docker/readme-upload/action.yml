@@ -8,11 +8,19 @@ inputs:
   dockerhub_password:
     required: true
     description: "Password for Dockerhub"
+  dockerhub_repository:
+    required: true
+    description: "Repository for Dockerhub"
+  decription_file:
+    required: true
+    description: "File to upload"
 runs:
   using: 'docker'
   image: 'docker://proum/dockerhub-description:latest'
   env:
     DOCKERHUB_USERNAME: ${{ inputs.dockerhub_username }}
     DOCKERHUB_PASSWORD: ${{ inputs.dockerhub_password }}
+    DOCKERHUB_REPOSITORY: ${{ inputs.dockerhub_repository }}
+    DESCRIPTION_FILE: ${{ inputs.decription_file }}
   args:
     - "--pipeline"
