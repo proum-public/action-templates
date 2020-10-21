@@ -12,8 +12,9 @@ inputs:
     required: true
     description: "Repository for Dockerhub"
   decription_file:
-    required: true
+    required: false
     description: "File to upload"
+    default: "README.md"
 runs:
   using: 'docker'
   image: 'docker://proum/dockerhub-description:latest'
